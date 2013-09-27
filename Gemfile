@@ -13,8 +13,6 @@ group :production do
   gem 'pg'
 end  
 
-
-
 # Use SCSS for stylesheets
 
 
@@ -43,12 +41,12 @@ end
 
 gem 'sendgrid'
 gem "formtastic", "~> 2.2.1"
-
 gem 'sass-rails', '~> 4.0.0'
 gem 'coffee-rails', '~> 4.0.0' 
 gem 'uglifier', '>= 1.3.0'  
+
 # Add Foundation Here
-gem 'compass-rails' # you need this or you get an err
+gem 'compass-rails', '~> 2.0.alpha.0' # you need this or you get an err
 gem 'zurb-foundation', '~> 4.0.0'  
 
 # Use ActiveModel has_secure_password
