@@ -5,14 +5,25 @@ class UsersController < ApplicationController
     
     def new
       # Create the user from params
-      #@user = User.new(params[:first_name])
-      #if @user.save
+      @user = User.new
+    end  
+
+    def create
+      # Create the user from params
+      @user = User.new(user_params)
+      if @user.save
         # Deliver the signup_email
         # Notifier.signup_email(@user).deliver
-        # redirect_to(@user, :notice => 'User created')
-      #else
-        # render :action => 'new'
-      #end
+        redirect_to alert: "User Created!"
+      else
+        render :action => 'new'
+      end
+    end
+    
+    private
+
+    def user_params
+      params.require(:user).permit(:first_name, :last_name, :email) if params[:user]
     end    
-  
+    
 end

@@ -1,8 +1,8 @@
 Gallery2::Application.routes.draw do
   get "signup/intro"
   get "users/new"
-  get "users/new"
-  #post "users/new"
+  get "users/create"
+  post "users/create"
   
    
   # The priority is based upon order of creation: first created -> highest priority.
