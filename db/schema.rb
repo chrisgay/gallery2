@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130927094524) do
+ActiveRecord::Schema.define(version: 20130929224202) do
+
+  create_table "notifier2s", force: true do |t|
+    t.string   "to"
+    t.string   "from"
+    t.string   "subject"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "notifiers", force: true do |t|
     t.datetime "created_at"

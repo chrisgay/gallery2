@@ -40,6 +40,7 @@ group :doc do
 end
 
 gem 'sendgrid'
+gem 'mail'
 gem "formtastic", "~> 2.2.1"
 gem 'sass-rails', '~> 4.0.0'
 gem 'coffee-rails', '~> 4.0.0' 

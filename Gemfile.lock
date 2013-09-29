@@ -129,6 +129,7 @@ DEPENDENCIES
   formtastic (~> 2.2.1)
   jbuilder (~> 1.2)
   jquery-rails
+  mail
   pg
   rails (= 4.0.0)
   sass-rails (~> 4.0.0)
