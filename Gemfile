@@ -48,7 +48,7 @@ gem 'uglifier', '>= 1.3.0'
 
 # Add Foundation Here
 gem 'compass-rails', '~> 2.0.alpha.0' # you need this or you get an err
-gem 'zurb-foundation', '~> 4.0.0'  
+gem 'zurb-foundation'  
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
